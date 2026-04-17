@@ -1,0 +1,41 @@
+CREATE TABLE Estoque_movimento 
+( 
+ ID INT PRIMARY KEY AUTO_INCREMENT,  
+ nome VARCHAR NOT NULL,  
+ quantidade INT NOT NULL,  
+ criado_em DATETIME NOT NULL,  
+ produto_id INT,  
+); 
+
+CREATE TABLE produtos 
+( 
+ id INT PRIMARY KEY NOT NULL,  
+ nome VARCHAR NOT NULL,  
+ codigoBarra VARCHAR,  
+ estoqueAtual INT NOT NULL,  
+ estoqueMinimo INT NOT NULL,  
+ precoCompra FLOAT NOT NULL,  
+ precoVenda FLOAT NOT NULL,  
+ categoria_id INT,  
+); 
+
+CREATE TABLE categorias 
+( 
+ id INT PRIMARY KEY NOT NULL,  
+ nome VARCHAR NOT NULL,  
+ lugar VARCHAR,  
+); 
+
+CREATE TABLE notificacoes 
+( 
+ id INT PRIMARY KEY NOT NULL,  
+ produto_id INT,  
+ status VARCHAR NOT NULL,  
+ message VARCHAR NOT NULL,  
+ criadoEm DATETIME NOT NULL,  
+); 
+
+ALTER TABLE Estoque_movimento ADD FOREIGN KEY(produto_id) REFERENCES produtos (produto_id)
+ALTER TABLE produtos ADD FOREIGN KEY(categoria_id) REFERENCES categorias (categoria_id)
+ALTER TABLE categorias ADD FOREIGN KEY(id) REFERENCES undefined (id)
+ALTER TABLE notificacoes ADD FOREIGN KEY(produto_id) REFERENCES produtos (produto_id)
