@@ -57,6 +57,7 @@ Nesta sprint, o foco saiu da modelagem e entrou na funcionalidade operacional. C
 * Interface de filtros por categoria para facilitar a organização física no balcão.
 
 ### Evidências
+![Protótipo StockMaster](./imagem_telas.png)
 * **Protótipo Atualizado:** Tela de inventário exibindo o ícone de scanner e as etiquetas de "Estoque Baixo" em vermelho.
 * **Logs de Sistema:** Registro de notificações pendentes e enviadas com sucesso.
 
