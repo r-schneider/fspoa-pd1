@@ -1,0 +1,115 @@
+.product-table-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.table-header h3 {
+  font-size: 20px;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.table-header p {
+  color: #667085;
+  font-size: 14px;
+}
+
+.table-header div:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+.product-table-card table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.product-table-card th,
+.product-table-card td {
+  padding: 16px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.product-table-card th {
+  color: #667085;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-table-card tbody tr {
+  transition: 0.2s;
+}
+
+.product-table-card tbody tr:hover {
+  background: #f9fafb;
+}
+
+.btn-light {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #667085;
+}
+
+.btn-light:hover {
+  background: #eaf3ff;
+  color: #0f3554;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.product-icon {
+  width: 42px;
+  height: 42px;
+  background: #ffedd5;
+  color: #f59e42;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #667085;
+}
+
+.actions svg {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions svg:hover {
+  color: #0f3554;
+  transform: scale(1.08);
+}

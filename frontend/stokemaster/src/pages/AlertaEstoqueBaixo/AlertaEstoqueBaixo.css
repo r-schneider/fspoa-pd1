@@ -1,0 +1,53 @@
+.alerta-estoque-baixo {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.alerta-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.alerta-info {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 22px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alerta-info strong {
+  color: #9a3412;
+  font-size: 15px;
+}
+
+.alerta-info span {
+  color: #c2410c;
+  font-size: 14px;
+}
+
+.alerta-card table {
+  min-width: 760px;
+}
+
+.alerta-card tbody tr:hover {
+  background: #f9fafb;
+}
+
+.estoque-critico {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.estoque-atencao {
+  color: #d97706;
+  font-weight: bold;
+}

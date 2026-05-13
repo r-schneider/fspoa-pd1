@@ -1,0 +1,25 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.page-header h2 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.page-header p {
+  color: #667085;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

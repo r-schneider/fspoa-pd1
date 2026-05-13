@@ -1,0 +1,55 @@
+.relatorio-movimentacao {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.relatorio-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.relatorio-filters {
+  display: grid;
+  grid-template-columns: 180px 200px 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.relatorio-filters input,
+.relatorio-filters select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.relatorio-card table {
+  min-width: 850px;
+}
+
+.relatorio-card tbody tr:hover {
+  background: #f9fafb;
+}
+
+.entrada-text {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.saida-text {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .relatorio-filters {
+    grid-template-columns: 1fr;
+  }
+}

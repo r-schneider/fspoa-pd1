@@ -1,0 +1,29 @@
+.status-badge {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.status-badge.estavel,
+.status-badge.entrada {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-badge.critico,
+.status-badge.saida {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge.atencao {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.ajuste {
+  background: #eaf3ff;
+  color: #0f3554;
+}

@@ -1,0 +1,93 @@
+.visualizar-estoque {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.stock-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stock-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.stock-icon {
+  width: 44px;
+  height: 44px;
+  background: #ffedd5;
+  color: #f59e42;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.stock-card h4 {
+  font-size: 17px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.stock-card p {
+  color: #667085;
+  font-size: 14px;
+}
+
+.bar {
+  height: 9px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.bar-green {
+  width: 85%;
+  background: #22c55e;
+}
+
+.bar-red {
+  width: 25%;
+  background: #ef4444;
+}
+
+.bar-yellow {
+  width: 55%;
+  background: #facc15;
+}
+
+.stock-table-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.stock-table-card table {
+  min-width: 760px;
+}
+
+.stock-table-card tbody tr:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 1100px) {
+  .stock-summary {
+    grid-template-columns: 1fr;
+  }
+}

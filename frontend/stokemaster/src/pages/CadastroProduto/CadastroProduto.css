@@ -1,0 +1,34 @@
+.cadastro-produto h2 {
+  margin-bottom: 20px;
+}
+
+.cadastro-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cadastro-form input,
+.cadastro-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  outline: none;
+}
+
+.cadastro-form textarea {
+  grid-column: 1 / 3;
+  height: 110px;
+  resize: vertical;
+}
+
+.cadastro-form button {
+  background: #0f3554;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
