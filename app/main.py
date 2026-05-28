@@ -1,43 +1,42 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy.orm import Session
 
-from app.core.database import Base, engine, SessionLocal
-from app.repositories.product_repository import ProductRepository
-from app.routers import fornecedor_router, saida_router
+from app.core.database import engine, Base
+from app.routers import auth_router, category_router, product_router, stock_router, dashboard_router
+
+# Import all models so SQLAlchemy registers them before create_all
+import app.models  # noqa: F401
 
 app = FastAPI(
-    title="StockMaster API",
-    description="Backend do sistema de controle de estoque para ferragem.",
+    title="Ferragem Pro — API",
+    description="Sistema de Gestão de Estoque para Ferragens",
     version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
 
+# CORS — adjust origins for production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(fornecedor_router.router)
-app.include_router(saida_router.router)
+# Routers
+app.include_router(auth_router)
+app.include_router(category_router)
+app.include_router(product_router)
+app.include_router(stock_router)
+app.include_router(dashboard_router)
 
-repository = ProductRepository()
 
-Base.metadata.create_all(bind=engine)
+@app.get("/", tags=["Health"])
+def root():
+    return {"status": "ok", "app": "Ferragem Pro API", "version": "1.0.0"}
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
-@app.get("/products")
-def list_products(db: Session = Depends(get_db)):
-    return repository.find_all(db)
-
-@app.post("/products")
-def create_product(nome: str, db: Session = Depends(get_db)):
-    return repository.create(db, nome)
+@app.get("/health", tags=["Health"])
+def health():
+    return {"status": "healthy"}
