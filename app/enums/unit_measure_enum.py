@@ -1,6 +1,6 @@
 from enum import Enum
 
-class UnitMeasture(str, Enum):
+class UnitMeasure(str, Enum):
     UNIT = "UN"
     KILOGRAM = "KG" 
     LITER = "LT"
