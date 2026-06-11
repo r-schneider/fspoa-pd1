@@ -48,7 +48,7 @@ function CadastroFornecedor() {
       const lista = await fornecedoresAPI.listar();
       setFornecedores(lista);
     } catch {
-      // silencioso — lista é secundária
+      
     }
   }
 
