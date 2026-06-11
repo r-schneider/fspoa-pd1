@@ -1,0 +1,47 @@
+/* Globais (.alert, .switch/.slider, .form-actions, .btn-cancelar,
+   .btn-editar, .btn-deletar, .table-acoes) estão em App.css */
+
+.fornecedor-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.fornecedor-table th {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 2px solid #e2e8f0;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.fornecedor-table td {
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+.fornecedor-table tr:hover td {
+  background: #f8fafc;
+}
+
+.forn-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 16px;
+}
+
+.forn-busca {
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  width: 220px;
+}
+.forn-busca:focus {
+  border-color: #0f3554;
+  box-shadow: 0 0 0 3px rgba(15, 53, 84, 0.1);
+}

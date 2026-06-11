@@ -1,0 +1,98 @@
+.produtos-mais-vendidos {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.vendidos-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.analise-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.analise-tabs button {
+  border: 1px solid #e5e7eb;
+  background: transparent;
+  padding: 9px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: #667085;
+  transition: 0.2s;
+}
+
+.analise-tabs button.active {
+  background: #eaf3ff;
+  color: #0f3554;
+  border-color: #bfdbfe;
+}
+
+.analise-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.kpi-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kpi-label {
+  font-size: 11px;
+  color: #667085;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.kpi-valor {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.analise-chart {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.analise-chart-titulo {
+  font-size: 13px;
+  color: #667085;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.vendidos-card table {
+  min-width: 760px;
+}
+
+.vendidos-card tbody tr:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 1000px) {
+  .analise-kpis {
+    grid-template-columns: 1fr;
+  }
+}

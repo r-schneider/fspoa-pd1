@@ -1,0 +1,5 @@
+from app.backend.services.categoria_service import CategoriaService
+from app.backend.services.produto_service import ProdutoService
+from app.backend.services.movimentacao_estoque_service import MovimentacaoEstoqueService
+from app.backend.services.metricas_service import MetricasService
+from app.backend.services.fornecedor_service import FornecedorService

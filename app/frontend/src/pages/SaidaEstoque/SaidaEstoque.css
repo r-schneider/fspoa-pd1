@@ -1,0 +1,13 @@
+/* Alertas (.alert*) e tabela global em App.css */
+
+.input-com-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.estoque-hint {
+  font-size: 0.78rem;
+  color: #64748b;
+  padding-left: 0.25rem;
+}

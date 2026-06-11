@@ -1,5 +1,0 @@
-from app.repositories.base_repository import BaseRepository
-from app.repositories.user_repository import UserRepository
-from app.repositories.category_repository import CategoryRepository
-from app.repositories.product_repository import ProductRepository
-from app.repositories.stock_movement_repository import StockMovementRepository

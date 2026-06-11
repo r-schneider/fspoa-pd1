@@ -1,0 +1,57 @@
+/* Globais (.alert, .switch/.slider, .form-actions, .btn-cancelar,
+   .btn-editar, .btn-deletar, .table-acoes) estão em App.css */
+
+.categorias-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.categorias-table th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #667085;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.categorias-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1f2937;
+  vertical-align: middle;
+}
+.categorias-table tr:hover td {
+  background: #f9fafb;
+}
+
+.badge-count {
+  display: inline-block;
+  background: #eaf3ff;
+  color: #0f3554;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cat-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 16px;
+}
+
+.cat-busca {
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  width: 220px;
+}
+.cat-busca:focus {
+  border-color: #0f3554;
+  box-shadow: 0 0 0 3px rgba(15, 53, 84, 0.1);
+}

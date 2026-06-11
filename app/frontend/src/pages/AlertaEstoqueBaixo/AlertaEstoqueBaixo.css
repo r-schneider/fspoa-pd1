@@ -1,0 +1,98 @@
+.alerta-estoque-baixo {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.alerta-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.alerta-info {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 22px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alerta-info strong {
+  color: #9a3412;
+  font-size: 15px;
+}
+
+.alerta-info span {
+  color: #c2410c;
+  font-size: 14px;
+}
+
+.alerta-card table {
+  min-width: 760px;
+}
+
+.alerta-card tbody tr:hover {
+  background: #f9fafb;
+}
+
+.estoque-critico {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.estoque-atencao {
+  color: #d97706;
+  font-weight: bold;
+}
+
+.btn-repor {
+  background: #eaf3ff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  color: #0f3554;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-repor:hover {
+  background: #0f3554;
+  color: #fff;
+}
+
+.proximos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.proximos-titulo {
+  font-size: 17px;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.proximos-subtitulo {
+  font-size: 13px;
+  color: #667085;
+}
+
+.proximos-badge {
+  background: #fef9c3;
+  color: #a16207;
+  border: 1px solid #fde68a;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 13px;
+  font-weight: 600;
+}

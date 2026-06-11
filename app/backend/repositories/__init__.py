@@ -1,0 +1,5 @@
+from app.backend.repositories.base_repository import BaseRepository
+from app.backend.repositories.categoria_repository import CategoriaRepository
+from app.backend.repositories.produto_repository import ProdutoRepository
+from app.backend.repositories.movimentacao_estoque_repository import MovimentacaoEstoqueRepository
+from app.backend.repositories.fornecedor_repository import FornecedorRepository
